@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title><%=title %></title>
+    <link type="text/css" href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <head>
+        <h1>
+            <%=title %>
+        </h1>
+    </head>
+    <div role="main">
+        <p>
+            <%=content %>
+        </p>
+        <p><table style="width:400px;">
+            <tr><th>伝言です！</th></tr>
+            <tr><td><%=data.msg %></td></tr>
+        </table></p>
+        <form method="post" action="/">
+            MESSAGE <input type="text" name="msg">
+            <input type="submit" value="Click">
+        </p>
+        </form>
+        <p><a href="/other">Other Pageに移動 &gt;&gt;</a></p>
+    </div>
+</body>
+
+</html>
